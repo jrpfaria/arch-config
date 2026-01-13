@@ -8,3 +8,22 @@ font-family = EnvyCodeR Nerd Font
 # Mono Theme:
 background = 101010
 foreground = ffffff
+
+# Color Palette:
+palette= 0=#000000
+palette= 1=#C0C0C0
+palette= 2=#FFFFFF
+palette= 3=#9E9E9E
+palette= 4=#B5B5B5
+palette= 5=#D0D0D0
+palette= 6=#E0E0E0
+palette= 7=#FFFFFF
+
+palette= 8=#404040
+palette= 9=#C0C0C0
+palette= 10=#FFFFFF
+palette= 11=#B0B0B0
+palette= 12=#D0D0D0
+palette= 13=#E0E0E0
+palette= 14=#F0F0F0
+palette= 15=#FFFFFF

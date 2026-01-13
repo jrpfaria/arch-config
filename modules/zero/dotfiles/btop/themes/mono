@@ -1,0 +1,42 @@
+# ================================
+# Black & White Theme
+# ================================
+
+# Main colors
+theme_background = "#000000"
+theme_foreground = "#EDEDED"
+
+# Title / headers
+theme_title = "#FFFFFF"
+theme_highlight = "#FFFFFF"
+
+# Selected item
+theme_selected = "#FFFFFF"
+theme_selected_bg = "#303030"
+
+# Inactive text
+theme_inactive = "#7A7A7A"
+
+# Graph colors
+theme_graph_cpu = "#FFFFFF"
+theme_graph_mem = "#C0C0C0"
+theme_graph_net = "#9E9E9E"
+theme_graph_proc = "#B5B5B5"
+theme_graph_disk = "#D0D0D0"
+
+# Temperature
+theme_temp_normal = "#EDEDED"
+theme_temp_warn = "#B0B0B0"
+theme_temp_crit = "#FFFFFF"
+
+# Process states
+theme_proc_running = "#FFFFFF"
+theme_proc_sleeping = "#9E9E9E"
+theme_proc_zombie = "#7A7A7A"
+theme_proc_stopped = "#B0B0B0"
+
+# Misc
+theme_divider = "#303030"
+theme_scrollbar = "#404040"
+theme_box = "#404040"
+
