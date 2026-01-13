@@ -1,0 +1,41 @@
+@define-color foreground #eeeeee;
+@define-color foreground-inactive #aaaaaa;
+@define-color background #000000;
+
+* {
+    font-family: EnvyCodeR Nerd Font;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: @background;
+}
+
+#workspaces button {
+    color: @foreground;
+}
+
+#workspaces button.empty {
+    color: @foreground-inactive;
+}
+
+
+#custom-platform-profile {
+    padding-left: 1em
+}
+
+#custom-gputemp,
+#custom-cputemp,
+#memory,
+#wireplumber,
+#battery,
+#idle_inhibitor,
+#language,
+#network,
+#bluetooth,
+#tray {
+    padding-right: 1em 
+}

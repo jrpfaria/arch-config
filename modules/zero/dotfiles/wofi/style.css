@@ -1,0 +1,45 @@
+* {
+    font-family: "EnvyCodeR Nerd Font", monospace;
+}
+
+window {
+    background-color: transparent;
+}
+
+#input {
+    margin: 5px;
+    outline: 1px;
+    outline-color: #808080;
+    background-color: transparent;
+}
+
+#inner-box {
+    background-color: #0A0A0A;
+}
+
+#outer-box {
+    margin: 2px;
+    padding: 10px;
+    background-color: #0A0A0A;
+    border-radius: 20px;
+}
+
+#scroll {
+    margin: 5px;
+}
+
+#text {
+    padding: 4px;
+    color: #808080;
+    margin-left: 4px;
+}
+
+#entry:selected {
+    background-color: #0A0A0A;
+}
+
+#input:focus {
+    background-color: #0A0A0A;
+    box-shadow: none;
+    outline: none;
+}

@@ -1,0 +1,93 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "spacing": 5,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["group/hardware", "wireplumber", "network", "bluetooth", "tray"],
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/cputemp",
+            "custom/gputemp",
+            "memory"
+        ]
+    },
+
+    "hyprland/workspaces": {
+        "format": "<span size='larger'>{icon}</span>",
+        "on-click": "activate",
+        "format-icons": {
+            "active": "\uf444 ",
+            "default": "\uf4c3 "
+        },
+        "icon-size": 10,
+        "sort-by-number": true,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+        }
+    },
+
+    "clock": {
+        "format": "{:%d.%m.%Y | %H:%M}"
+    },
+
+    "wireplumber": {
+        "interval": 15,
+        "format": "\udb81\udd7e  {volume}%",
+        "max-volume": 100,
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    },
+
+    "custom/gputemp": {
+        "interval": 15,
+        "exec": "sensors | grep -A 6 'amdgpu-pci-0300' | grep 'junction' | awk '{print $2}' | tr -d '+'",
+        "format": "󰍹  {}",
+        "tooltip-format": "GPU @{}"
+    },
+
+    "custom/cputemp": {
+        "interval": 15,
+        "exec": "sensors | grep -A 3 'k10temp-pci-00c3' | grep 'Tctl' | awk '{print $2}' | tr -d '+'",
+        "format": "\uf4bc  {}",
+        "tooltip-format": "CPU @{}"
+    },
+
+    "memory": {
+        "interval": 15,
+        "format": "  {used:0.1f}G"
+    },
+
+    "network": {
+        "format": "",
+        "format-ethernet": "\udb83\udc9d",
+        "format-wifi": "{icon}",
+        "format-disconnected": "\udb83\udc9c",
+        "format-icons": ["\udb82\udd2f", "\udb82\udd1f", "\udb82\udd22", "\udb82\udd25", "\udb82\udd28"],
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{ifname}",
+        "tooltip-format-disconnected": "Disconnected",
+    },
+
+    "bluetooth": {
+        "on-click": "exec ghostty -e bluetui",
+        "format": "\udb80\udcaf",
+        "format-disabled": "\udb80\udcb2",
+        "format-connected": "\udb80\udcb1",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 16
+    },
+}

@@ -1,0 +1,28 @@
+# Host configuration for core-zero
+# Home
+host: core-zero
+description: Home
+
+enabled_modules:
+- zero
+
+packages: []
+
+exclude: []
+
+config_backups:
+  enabled: true      # Auto-backup on sync
+  max_backups: 5     # Keep last 5 backups (0 = unlimited)
+
+system_backups:
+  enabled: true           # Global toggle for system backups
+  backup_on_sync: true    # Create backup during dcli sync
+  backup_on_update: true  # Create backup during dcli update
+  tool: snapper                # Backup tool: timeshift or snapper
+  snapper_config: root    # Snapper config name (if using snapper)
+
+flatpak_scope: user
+auto_prune: true
+
+aur_helper: paru
+editor: nvim

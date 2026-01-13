@@ -1,0 +1,13 @@
+allow_images=true
+hide_scroll=true
+no_actions=true
+term=ghostty
+mode=drun
+show=drun
+lines=3
+gtk_dark=true
+height=400
+width=400
+insensitive=true
+prompt=
+--show
