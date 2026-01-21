@@ -1,6 +1,6 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
-
+export QT_QPA_PLATFORMTHEME="qt6ct"
 
 # overwrite greeting
 # potentially disabling fastfetch
@@ -22,3 +22,9 @@ function fix-window
     end
 end
 
+alias off='shutdown -h now'
+alias v='nvim'
+alias vv='nvim .'
+alias install='dcli install'
+alias search='paru -Ss --bottomup'
+alias uninstall='dcli remove'
