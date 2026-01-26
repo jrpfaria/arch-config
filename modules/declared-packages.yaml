@@ -1,0 +1,10 @@
+description: Packages installed via dcli install or dcli search commands
+packages:
+- papirus-icon-theme
+- kvantum
+- gitui
+- zerotier-one
+- spotify-launcher
+- cargo
+- zoxide
+- starship

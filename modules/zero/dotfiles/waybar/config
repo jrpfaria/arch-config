@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["group/hardware", "hyprland/language", "wireplumber", "network", "bluetooth", "tray"],
+    "modules-right": ["group/hardware", "group/sysinfo", "network", "bluetooth", "tray"],
     "group/hardware": {
         "orientation": "horizontal",
         "modules": [
@@ -14,6 +14,10 @@
             "custom/gputemp",
             "memory"
         ]
+    },
+    "group/sysinfo": {
+	"orientation": "horizontal",
+	"modules": ["hyprland/language", "wireplumber"]
     },
 
     "hyprland/workspaces": {

@@ -3,7 +3,7 @@
 # on Ghostty's website, at https://ghostty.org/docs/config.
 
 # Font
-font-family = EnvyCodeR Nerd Font
+font-family = EnvyCodeR Nerd Font Mono
 
 # Mono Theme:
 background = 101010

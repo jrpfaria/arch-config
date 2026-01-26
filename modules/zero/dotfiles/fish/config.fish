@@ -28,3 +28,7 @@ alias vv='nvim .'
 alias install='dcli install'
 alias search='paru -Ss --bottomup'
 alias uninstall='dcli remove'
+alias pdf='zen-browser'
+
+zoxide init fish | source
+starship init fish | source
