@@ -39,7 +39,7 @@
             "key": "󰏖 ",
             "keyColor": "cyan"
         },
-        {
+	{
             "type": "wm",
             "key": " ",
             "keyColor": "blue"

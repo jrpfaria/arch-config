@@ -8,3 +8,14 @@ packages:
 - cargo
 - zoxide
 - starship
+- ibus
+- npm
+- ttf-cascadia-mono-nerd
+exclude: []
+conflicts: []
+pre_install_hook: null
+post_install_hook: null
+hook_behavior: ask
+pre_hook_behavior: null
+post_hook_behavior: null
+run_hooks_as_user: false

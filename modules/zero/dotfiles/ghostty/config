@@ -7,6 +7,10 @@ font-family = EnvyCodeR Nerd Font Mono
 
 # Mono Theme:
 background = 101010
+background-opacity = 0.85
+background-blur = true
+background-opacity-cells = true
+
 foreground = ffffff
 
 # Color Palette:
@@ -27,3 +31,6 @@ palette= 12=#D0D0D0
 palette= 13=#E0E0E0
 palette= 14=#F0F0F0
 palette= 15=#FFFFFF
+
+# Cursor Selection
+copy-on-select = clipboard

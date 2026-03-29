@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["group/hardware", "group/sysinfo", "network", "bluetooth", "tray"],
+    "modules-right": ["custom/updates", "group/hardware", "group/sysinfo", "network", "bluetooth", "tray"],
     "group/hardware": {
         "orientation": "horizontal",
         "modules": [
@@ -39,7 +39,25 @@
     },
 
     "clock": {
-        "format": "{:%d.%m.%Y | %H:%M}"
+        "format": "{:%H:%M}  ",
+        "format-alt": "{:%A, %b %d, %Y (%R)}  ",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar-weeks-pos": "right",
+        "today-format": "<span color='#ff6699'><b><u>{}</u></b></span>",
+        "format-calendar": "<span color='#ecc6d9'><b>{}</b></span>",
+        "format-calendar-weeks": "<span color='#99ffdd'><b>W{:%V}</b></span>",
+        "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "on-scroll": {
+                    "calendar": 1
+                     }
+    },
+
+    "custom/updates": {
+        "exec": "scripts/updates/update-checker.sh",
+        "interval": 30,
+        "return-type": "json",
+        "format": "{}",
+        "on-click": "ghostty -e update"
     },
 
     "wireplumber": {
@@ -76,6 +94,7 @@
     }, 
 
     "network": {
+    	"on-click": "exec ghostty -e nmtui",
         "format": "",
         "format-ethernet": "\udb83\udc9d",
         "format-wifi": "{icon}",

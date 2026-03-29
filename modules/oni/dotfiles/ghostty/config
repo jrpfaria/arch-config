@@ -1,0 +1,52 @@
+# This is the configuration file for Ghostty.
+# Each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Font
+font-family = Cascadia Mono
+
+# Background & Theme:
+background = 101010
+background-opacity = 0.85
+background-blur = true
+background-opacity-cells = true
+
+# ANSI Colors
+palette = 0=#0b0f14   
+# black (true background)
+palette = 1=#e06c75
+# red (eyes / accents)
+palette = 2=#7aa89f
+# green (muted teal from armor tones)
+palette = 3=#d9875f
+# yellow (blade highlights)
+palette = 4=#5f7f9f
+# blue (main steel blue)
+palette = 5=#8ecae6
+# magenta (subtle blend tone)
+palette = 6=#6ca6a3
+# cyan (cool accents)
+palette = 7=#c7d4e2
+# white (foreground)
+
+# Bright variants
+palette = 8=#2a3440
+# bright black
+palette = 9=#ff7a84
+# bright red (stronger pop)
+palette = 10=#8fc1b8
+# bright green
+palette = 11=#ffb38a
+# bright orange
+palette = 12=#7aa6c2
+# bright blue
+palette = 13=#bde0fe
+# bright light blue
+palette = 14=#89d1cf
+# bright cyan
+palette = 15=#e6edf3
+# bright white
+
+
+# Cursor Selection
+copy-on-select = clipboard
