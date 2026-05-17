@@ -4,7 +4,7 @@ host: core-zero
 description: Home
 
 enabled_modules:
-- zero
+- loopy
 
 packages: []
 

@@ -1,0 +1,42 @@
+@define-color white #ffffff;
+@define-color bg-pink #e98381;
+@define-color bg-cream #e2b799;
+@define-color bg-black #10100f;
+
+* {
+  font-family: GohuFont uni14 Nerd Font Propo;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+#waybar {
+  color: @white;
+  background-color: transparent;
+}
+
+#workspaces button {
+  color: @white;
+}
+
+#workspaces button.empty {
+  color: @bg-black;
+}
+
+#custom-platform-profile {
+  padding-left: 1em;
+}
+
+#custom-updates,
+#custom-gputemp,
+#custom-cputemp,
+#memory,
+#wireplumber,
+#battery,
+#idle_inhibitor,
+#language,
+#network,
+#bluetooth,
+#tray {
+  padding-right: 1em;
+}

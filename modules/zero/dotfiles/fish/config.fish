@@ -39,6 +39,7 @@ alias install='dcli install'
 alias search='paru -Ss --bottomup'
 alias uninstall='dcli remove'
 alias get_idf='. $HOME/esp/esp-idf/export.fish'
+alias ff='fastfetch'
 
 zoxide init fish | source
 starship init fish | source
