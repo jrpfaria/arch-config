@@ -1,46 +1,69 @@
+@define-color white #ffffff;
+@define-color bg-pink #e98381;
+@define-color bg-cream #e2b799;
+@define-color bg-black #10100f;
+
 * {
-    font-family: "EnvyCodeR Nerd Font", monospace;
+    font-family: "GohuFont uni14 Nerd Font Propo", propo;
 }
 
 window {
     background-color: transparent;
 }
 
+#outer-box {
+    margin: 6px;
+    padding: 10px;
+    background-color: alpha(@bg-black, 0.35);
+    border: 1px solid @bg-cream;
+    border-radius: 18px;
+}
+
 #input {
     margin: 5px;
-    outline: 1px;
-    outline-color: #808080;
+    padding: 6px;
     background-color: transparent;
+    color: @white;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* GTK entry focus ring override */
+#input:focus,
+entry:focus {
+    color: white;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+
+    /* kills GTK focus ring */
+    -gtk-outline-radius: 0;
 }
 
 #inner-box {
-    background-color: #0A0A0A;
-}
-
-#outer-box {
-    margin: 2px;
-    padding: 10px;
-    background-color: #0A0A0A;
-    border-radius: 20px;
+    background-color: transparent;
 }
 
 #scroll {
-    margin: 5px;
+    margin: 0px;
 }
 
 #text {
+    padding: 6px;
+    color: @white;
+}
+
+#entry {
     padding: 4px;
-    color: #808080;
-    margin-left: 4px;
 }
 
 #entry:selected {
-    background-color: #0A0A0A;
-}
-
-#input:focus {
-    background-color: #0A0A0A;
-    box-shadow: none;
+    background-color: alpha(@bg-pink, 0.55);
+    border-radius: 18px;
+    border: none;
     outline: none;
+    color: @white;
 }
-
