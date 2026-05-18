@@ -7,8 +7,9 @@ height=400
 lines=3
 
 insensitive=true
-prompt=
+prompt=fetch!♥
 allow_images=true
+image_size=24
 hide_scroll=true
 no_actions=true
 
