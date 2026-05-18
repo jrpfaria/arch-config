@@ -68,21 +68,21 @@
     },
 
     "custom/gputemp": {
-        "interval": 15,
+        "interval": 8,
         "exec": "sensors | grep -A 6 'amdgpu-pci-0300' | grep 'junction' | awk '{print $2}' | tr -d '+'",
         "format": "󰍹 {}",
         "tooltip-format": "GPU @{}"
     },
 
     "custom/cputemp": {
-        "interval": 15,
+        "interval": 8,
         "exec": "sensors | grep -A 3 'k10temp-pci-00c3' | grep 'Tctl' | awk '{print $2}' | tr -d '+'",
         "format": "\uf4bc {}",
         "tooltip-format": "CPU @{}"
     },
 
     "memory": {
-        "interval": 15,
+        "interval": 8,
         "format": " {used:0.1f}G"
     },
 

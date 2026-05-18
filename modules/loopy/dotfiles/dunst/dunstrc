@@ -48,11 +48,17 @@ browser = /usr/bin/xdg-open
 always_run_script = true
 title = Dunst
 class = Dunst
-corner_radius = 8
+corner_radius = 12
 ignore_dbusclose = false
 layer = overlay
 force_xwayland = false
 force_xinerama = false
+separator_height = 2
+padding = 14
+horizontal_padding = 14
+text_icon_padding = 10
+frame_width = 2
+gap_size = 8
 
 # Mouse
 mouse_left_click = close_current
@@ -63,22 +69,25 @@ mouse_right_click = close_all
 per_monitor_dpi = false
 
 [urgency_low]
-background = "#2d2d2d"
-foreground = "#8c8c8c"
-frame_color = "#5c5c5c"
-timeout = 5
+background = "#10100f"
+foreground = "#b8b2ad"
+frame_color = "#5e5a57"
+highlight = "#e2b799"
+timeout = 4
 override_pause_level = 10
 
 [urgency_normal]
-background = "#1b1c1d"
-foreground = "#cdcdcd"
-frame_color = "#bebebe"
-timeout = 5
+background = "#10100f"
+foreground = "#ffffff"
+frame_color = "#e98381"
+highlight = "#e2b799"
+timeout = 6
 override_pause_level = 30
 
 [urgency_critical]
-background = "#1b1b1b"
-foreground = "#d2d2d2"
-frame_color = "#8c8c8c"
+background = "#10100f"
+foreground = "#ffffff"
+frame_color = "#e98381"
+highlight = "#e98381"
 timeout = 0
 override_pause_level = 60
