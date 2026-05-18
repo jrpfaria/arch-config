@@ -93,7 +93,7 @@
     }, 
 
     "network": {
-    	"on-click": "exec ghostty -e nmtui",
+    	"on-click": "exec ghostty -e wifitui --theme=$HOME/.config/wifitui/theme.toml",
         "format": "",
         "format-ethernet": "\udb83\udc9d",
         "format-wifi": "{icon}",

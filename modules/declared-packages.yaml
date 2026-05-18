@@ -1,19 +1,14 @@
 description: Packages installed via dcli install or dcli search commands
 packages:
-- papirus-icon-theme
-- kvantum
 - gitui
-- zerotier-one
 - spotify-launcher
 - cargo
 - zoxide
 - starship
-- ibus
-- npm
-- ttf-cascadia-mono-nerd
 - bookokrat
 - bc
 - yazi
+- wifitui
 exclude: []
 conflicts: []
 pre_install_hook: null

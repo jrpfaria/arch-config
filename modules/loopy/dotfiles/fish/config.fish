@@ -2,14 +2,6 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 export QT_QPA_PLATFORMTHEME="qt6ct"
 
-# overwrite greeting
-# potentially disabling fastfetch
-#function fish_greeting
-#    # smth smth
-#end
-#
-#
-
 function fix-window
   if test (count $argv) -eq 0
     echo "Usage: fix-window <pid> (run 'hyprctl clients' to check intended pid)"
@@ -48,6 +40,8 @@ alias search='paru -Ss --bottomup'
 alias uninstall='dcli remove'
 alias get_idf='. $HOME/esp/esp-idf/export.fish'
 alias ff='fastfetch'
+
+bind \cl fastfetch_ctrl_l
 
 zoxide init fish | source
 starship init fish | source

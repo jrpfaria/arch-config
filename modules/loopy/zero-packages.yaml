@@ -46,7 +46,6 @@ packages:
 - dmidecode
 - dmraid
 - dnsmasq
-- dolphin
 - dosfstools
 - duf
 - dunst
@@ -58,7 +57,6 @@ packages:
 - f2fs-tools
 - fastfetch
 - ffmpegthumbnailer
-- firefox
 - fsarchiver
 - ghostty
 - git
@@ -89,8 +87,6 @@ packages:
 - libwnck3
 - linux-cachyos
 - linux-cachyos-headers
-- linux-cachyos-lts
-- linux-cachyos-lts-headers
 - linux-firmware
 - logrotate
 - lsb-release
@@ -99,7 +95,6 @@ packages:
 - man-db
 - man-pages
 - mdadm
-- meld
 - mesa-utils
 - micro
 - mkinitcpio
@@ -114,8 +109,6 @@ packages:
 - nfs-utils
 - nilfs-utils
 - noto-color-emoji-fontconfig
-- noto-fonts
-- noto-fonts-cjk
 - noto-fonts-emoji
 - nss-mdns
 - ntp
@@ -160,7 +153,7 @@ packages:
 - ttf-dejavu
 - ttf-liberation
 - ttf-meslo-nerd
-- ttf-opensans
+- ttf-gohu-nerd
 - ufw
 - unrar
 - unzip
@@ -168,9 +161,7 @@ packages:
 - usb_modeswitch
 - usbutils
 - uwsm
-- vi
 - vim
-- vlc-plugins-all
 - vulkan-radeon
 - waybar
 - wget
@@ -194,9 +185,5 @@ packages:
 - xorg-xrandr
 - xorg-xwayland
 - zen-browser-bin
-- ttf-jetbrains-mono-nerd
-- ttf-envycoder-nerd
 - pamixer
 - hyprlock
-- qt6ct
-- qt5-declarative

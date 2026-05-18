@@ -14,7 +14,7 @@ palette= 9=#E8D0BC
 
 # Mono Theme:
 # background = 101010
-background-opacity = 0.85
+background-opacity = 0.7
 background-blur = true
 background-opacity-cells = true
 
