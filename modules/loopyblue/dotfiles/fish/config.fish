@@ -32,6 +32,10 @@ function check-fonts
     end
 end
 
+function sbg
+    swaybg -i $1 & disown
+end
+
 alias off='shutdown -h now'
 alias v='nvim'
 alias vv='nvim .'
@@ -40,6 +44,7 @@ alias search='paru -Ss --bottomup'
 alias uninstall='dcli remove'
 alias get_idf='. $HOME/esp/esp-idf/export.fish'
 alias ff='fastfetch'
+alias bg='swaybg -i'
 
 bind \cl fastfetch_ctrl_l
 

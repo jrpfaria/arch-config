@@ -2,68 +2,63 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
         "padding": {
-            "left": 4,
-            "top": 1
+            "top": 1,
+            "left": 24
         },
-        "type": "kitty-direct",
-        "source": "~/.config/fastfetch/loopy2.png",
-	"width": 26
+        "type": "kitty",
+        "source": "~/.config/fastfetch/loopycard.png",
+        "position": "top",
+        "width": 24
     },
     "display": {
         "separator": " -> "
     },
     "modules": [
         "break",
-        "break",
-        {
-            "type": "title",
-            "keyWidth": 10,
-            "format": "                {6}{7}{8}"
-        },
         {
             "type": "custom",
             "format": " ───────────────────────────────────────────── "
         },
         {
             "type": "os",
-            "key": " ",
-            "keyColor": "red"
+            "key": "    ",
+            "keyColor": "green"
         },
         {
             "type": "kernel",
-            "key": " ",
-            "keyColor": "red"
+            "key": "    ",
+            "keyColor": "green"
         },
         {
             "type": "packages",
-            "key": "󰏖 ",
-            "keyColor": "red"
+            "key": "   󰏖 ",
+            "keyColor": "green"
         },
-	{
+	    {
             "type": "wm",
-            "key": " ",
-            "keyColor": "red"
+            "key": "    ",
+            "keyColor": "green"
         },
         {
             "type": "shell",
-            "key": " ",
-            "keyColor": "red"
+            "key": "    ",
+            "keyColor": "green"
         },
         {
             "type": "terminal",
-            "key": " ",
-            "keyColor": "red"
+            "key": "    ",
+            "keyColor": "green"
         },
         {
             "type": "uptime",
-            "key": "󰔛 ",
-            "keyColor": "red"
+            "key": "   󰔛 ",
+            "keyColor": "green"
         },
         {
             "type": "command",
-            "key": " ",
+            "key": "    ",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); days_difference=$(( (current - birth_install) / 86400 )); echo $days_difference days",
-            "keyColor": "red"
+            "keyColor": "green"
         },
         {
             "type": "custom",
@@ -71,38 +66,37 @@
         },
         {
             "type": "cpu",
-            "key": " ",
-            "keyColor": "green",
+            "key": "    ",
+            "keyColor": "yellow",
             "format": "{1}"
         },
         {
             "type": "gpu",
-            "key": " ",
-            "keyColor": "green",
+            "key": "    ",
+            "keyColor": "yellow",
             "format": "{2}"
         },
         {
             "type": "host",
-            "key": "󰌢 ",
-            "keyColor": "green",
+            "key": "   󰌢 ",
+            "keyColor": "yellow",
             "format": "{2}"
         },
         {
             "type": "memory",
-            "key": " ",
-            "keyColor": "green",
+            "key": "    ",
+            "keyColor": "yellow",
             "format": "{1} / {2}"
         },
         {
             "type": "disk",
-            "key": " ",
-            "keyColor": "green",
+            "key": "    ",
+            "keyColor": "yellow",
             "format": "{1} / {2} ({3}) {20}"
         },
         {
             "type": "custom",
             "format": " ───────────────────────────────────────────── "
-        },
-        "break"
+        }
     ]
 }
