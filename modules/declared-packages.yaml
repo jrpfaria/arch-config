@@ -5,10 +5,14 @@ packages:
 - cargo
 - zoxide
 - starship
-- bookokrat
 - bc
 - yazi
 - wifitui
+- ani-cli
+- godot
+- zig
+- opencode
+- esp-idf
 exclude: []
 conflicts: []
 pre_install_hook: null

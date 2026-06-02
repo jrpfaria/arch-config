@@ -19,12 +19,8 @@
   color: @white;
 }
 
-#workspaces button.empty {
-  color: @bg-white;
-}
-
 #workspaces button:hover {
-  color: @bg-black;
+  color: @bg-pink;
   background: @white;
   opacity: 0.55;
   border: none;
@@ -34,6 +30,10 @@
   transition: none;
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none;
+}
+
+#workspaces button.empty {
+  color: @bg-black;
 }
 
 #custom-platform-profile {
