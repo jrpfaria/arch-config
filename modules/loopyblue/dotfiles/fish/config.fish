@@ -1,6 +1,7 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 export QT_QPA_PLATFORMTHEME="qt6ct"
+export EDITOR="nvim"
 
 function fix-window
   if test (count $argv) -eq 0
