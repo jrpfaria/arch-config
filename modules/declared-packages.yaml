@@ -13,6 +13,8 @@ packages:
 - zig
 - opencode
 - esp-idf
+- rose-pine-cursor
+- ttf-proggy-clean
 exclude: []
 conflicts: []
 pre_install_hook: null

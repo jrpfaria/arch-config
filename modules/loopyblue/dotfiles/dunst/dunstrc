@@ -86,8 +86,8 @@ override_pause_level = 30
 
 [urgency_critical]
 background = "#10100f"
-foreground = "#ffffff"
-frame_color = "#7793AD"
-highlight = "#7793AD"
+foreground = "#E8D0BC"
+frame_color = "#E8D0BC"
+highlight = "#E8D0BC"
 timeout = 0
 override_pause_level = 60
