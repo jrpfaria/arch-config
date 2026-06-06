@@ -7,3 +7,6 @@ ratio = [1, 3, 3]
 text = [
 	{ run = "nvim %s", block = true, desc = "nvim" },
 ]
+open = [
+	{ run = "zen-browser %s", name = "*.pdf", desc = "zen-browser" },
+]

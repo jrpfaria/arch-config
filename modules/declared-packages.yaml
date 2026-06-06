@@ -15,6 +15,7 @@ packages:
 - esp-idf
 - rose-pine-cursor
 - ttf-proggy-clean
+- jekyll
 exclude: []
 conflicts: []
 pre_install_hook: null
